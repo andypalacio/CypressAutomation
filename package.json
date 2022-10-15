@@ -1,0 +1,27 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress": "node ./node_modules/cypress/bin/cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andypalacio/CypressAutomation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andypalacio/CypressAutomation/issues"
+  },
+  "homepage": "https://github.com/andypalacio/CypressAutomation#readme",
+  "devDependencies": {
+    "cypress": "^10.10.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-image-diff-js": "^1.21.1",
+    "cypress-utils": "^2.3.0",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
