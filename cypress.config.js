@@ -5,7 +5,7 @@ module.exports = defineConfig({
   videosFolder: "cypress/videos",
 
   env: {
-    SITE: "https://admin.getlobee.com/home",
+    BASEURL: "https://admin.getlobee.com",
     USERNAME: "andresepalacio+demo@gmail.com",
     PASSWORD: "123123",
   },
