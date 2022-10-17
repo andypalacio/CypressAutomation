@@ -26,6 +26,7 @@
     "jsonwebtoken": "^8.5.1"
   },
   "dependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^13.0.2"
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5"
   }
 }
