@@ -23,6 +23,4 @@ Examples:
 | Invalid Password     | "andresepalacio+admin@gmail.com" | "333333" | "Wrong credentials. Please, try again." |
 | Empty email          | ""                               | "123123" | "Please enter Email and Password"       |
 | Empty password       | "andresepalacio+admin@gmail.com" | ""       | "Please enter Email and Password"       |
-#| Invalid email        | "test"                           | "123123" | "" |
-
 
