@@ -1,7 +1,7 @@
 describe("Login", () => {
   const BASEURL = Cypress.env("BASEURL");
 
-  it("Succesfuly logs in", () => {
+  it.skip("Succesfuly logs in", () => {
     cy.visit(BASEURL + "/home");
     cy.login();
     cy.url().should("include", "/guests");

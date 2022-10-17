@@ -19,9 +19,13 @@
   "homepage": "https://github.com/andypalacio/CypressAutomation#readme",
   "devDependencies": {
     "cypress": "^10.10.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-file-upload": "^5.0.8",
     "cypress-image-diff-js": "^1.21.1",
     "cypress-utils": "^2.3.0",
     "jsonwebtoken": "^8.5.1"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.2"
   }
 }
