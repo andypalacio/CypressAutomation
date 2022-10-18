@@ -1,10 +1,12 @@
 import { Given, Then, When } from "@badeball/cypress-cucumber-preprocessor";
 
 const BASEURL = Cypress.env("BASEURL");
+const t60 = { timeout: 60000 };
 
 Given("I navigate to {string}", function (string) {
   cy.visit(BASEURL + string);
 });  
+
 When("I enter {string} as user and {string} as password the login side", function (user, pass) {
   if (user) {
     cy.get('.right > .form > [type="email"]').click().type(user);
@@ -14,7 +16,7 @@ When("I enter {string} as user and {string} as password the login side", functio
   }
 });
 
-When("I click on the {string} button on the login side", (btnlabel) => {
+When("I click on the {string} button", (btnlabel) => {
   cy.get(".Button").contains(btnlabel).click();
 });
 
@@ -32,5 +34,5 @@ Then("logged out from the app", function () {
 });
 
 Then("The error message {string} is displayed", function (error) {
-  cy.get(".Error").should("contain", error);
+  cy.get(".Error", t60).should("contain", error);
 });

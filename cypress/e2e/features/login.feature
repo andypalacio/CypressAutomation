@@ -1,14 +1,10 @@
-Feature: title
-    In order to value
-    As a role
-    I want feature
+Feature: Validate that a user can log in to the app 
 
 Scenario: login as an admin
     Given I navigate to "/home"
     When I enter "andresepalacio+demo@gmail.com" as user and "123123" as password the login side
     And I click on the "Login" button on the login side
     Then I am successfully logged in
-
 
 Scenario Outline: try to login with invalid data
     Given I navigate to "/home"
