@@ -1,6 +1,6 @@
 import { Given, Then, When } from "@badeball/cypress-cucumber-preprocessor";
 
-When("I enter {string} on the {string} field on the Sign in section", function (value, field) {
+When("I enter {string} on the {string} field on the Sign in section", (value, field) => {
   if (value) {
     cy.get('.left > .form > [Placeholder="' + field + '"]')
       .click()
@@ -14,12 +14,12 @@ When("I click on the {string} link", (link) => {
     .click();
 });
 
-Then("The page {string} is displayed with the title {string}", function (page, title) {
+Then("The page {string} is displayed with the title {string}", (page, title) => {
   cy.url().should("include", page);
   cy.get('body').contains(title)
 });
 
-Given("The account {string} is created", function (hostelName) {
+Given("The account {string} is created", (hostelName) => {
   cy.url().should("include", "/guests");
   cy.get(".SubHeader__title").contains("Guests");
   cy.get(".--options").click();
