@@ -22,9 +22,6 @@ When("I click on the more options header item", () => {
   cy.get('.--options').should("be.visible").click();
 });
 
-When("I click on the {string} option", (itemName) => {
-  cy.get('[href]').contains(itemName).click()
-});
 
 When("I click on the Add New button of the cards collumn {string}", (columnTitle) => {
   cy.get('.Cards__cards-wrapper:contains("' + columnTitle + '") > .Button').click()
@@ -69,14 +66,3 @@ When("I enter a date as {string} day", (field) => {
 Then("I am redirected to {string}", (site) => {
   cy.url().should("include", site);
 });
-
-Given("I enter {string} on the {string} field", function (value, field) {
-  cy.get('[placeholder="' + field + '"]').click().clear().type(value)
-  });
-
-  Given("the value {string}, on the field {string} is saved", function (value, field) {
-    cy.get('.item:contains("Guests")').click();
-    cy.get('.--options').click();
-    cy.get('[href]:contains("Settings")').click()
-    cy.get('[placeholder="' + field + '"]').invoke('val').should('eq', value)
-    });

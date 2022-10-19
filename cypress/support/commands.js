@@ -25,6 +25,9 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 const BASEURL = Cypress.env("BASEURL");
 
+const compareSnapshotCommand = require('cypress-image-diff-js/dist/command')
+compareSnapshotCommand()
+
 Cypress.Commands.add("login", () => {
   cy.visit(BASEURL);
   var USERNAME = Cypress.env("USERNAME");

@@ -1,4 +1,6 @@
 {
+    "screenshotsFolder": "cypress-visual-screenshots/comparison",
+    "supportFile": "cypress/support/e2e.js",
     "json": {
       "enabled": false,
       "output": "jsonreport/test/.json"

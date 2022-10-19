@@ -20,9 +20,12 @@ Scenario: Successfuly log out from the app
     And I click on the "Log out" option
     Then logged out from the app
 
-
-
-
+Scenario: Successfuly upload a profile photo
+    Given I am logged in to the app
+    When I click on the more options header item
+    And I click on the "Settings" option
+    And I upload the file "hostelLogo.jpg" as profile photo
+    Then The new profile photo is saved
 
 
 
